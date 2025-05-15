@@ -40,7 +40,6 @@ int GetInfo::getUSBInfo(std::list<std::string> &listPara)
   
   if(usb_counter<=0)
   {
-    printf("Not found USB device\n");
     return 2;
   }
 
@@ -88,7 +87,6 @@ int GetInfo::getBOXInfo(const char *pUSBDevice,std::string &boxStr)
 
   if(box_counter<=0)
   {
-    printf("Not found BOX device\n");
     return 2;
   }
   boxStr=str;
